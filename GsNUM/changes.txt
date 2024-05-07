@@ -1,0 +1,2 @@
+ '''The error was this randint(1,100) but it was given randint(1,10) so I changed it''' in views.py line 20 Ig
+ 
