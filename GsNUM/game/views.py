@@ -17,8 +17,8 @@ def index(request):
             # If the guess is too low, provide a hint
             message = "You are close a bit! But it's Lesser than the number. Try again."
     else:
-        # If it's a GET request (initial load), generate a random number and store it in the session
-        random_number = random.randint(1, 10)
+        '''The error was this randint(1,100) but it was given randint(1,10) so I changed it'''
+        random_number = random.randint(1, 100   )
         request.session['random_number'] = random_number
         # Display the initial message
         message = "The number is locked! Now guess it..."
